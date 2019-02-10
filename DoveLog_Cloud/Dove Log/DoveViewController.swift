@@ -117,6 +117,8 @@ class DoveViewController: UIViewController {
                 }
             }
         }
+        bandnotoedit.text = ""
+        cockEggMate.text = ""
     }
     //End Lay Eggs
   
@@ -124,13 +126,6 @@ class DoveViewController: UIViewController {
     @IBAction func birdGivenFakeEggs(_ sender: AnyObject) {
                 guard bandnotoedit.hasValue,   let newbandedit = bandnotoedit.text  else {  return }
         
-//        guard bandnotoedit.text! != "" else {
-//            HPAlertShow.sharedInstance.showStatusView(state: true, time: 5, addToView: self, text: "Band Number to EDIT not supplied", textFontColor: UIColor.white, textFontSize: 25, position: .Center, viewBackgroundColor: UIColor.black, viewOpacity: 0.5, viewCornerRadius: 10.0, viewBorderWidth: 2.0, viewBorderColor: UIColor.white) { (completed) in
-//                if completed == true{
-//                }
-//            }
-//            return
-//        }
         DateConfigurator()
         
         let record = CKRecord(recordType: "tblBandComments")
@@ -188,15 +183,8 @@ class DoveViewController: UIViewController {
     @IBAction func birdGivenQuickComment(_ sender: AnyObject) {
       
          guard bandnotoedit.hasValue,   let newbandedit = bandnotoedit.text  else {  return }
-//        guard bandnotoedit.text! != "" else {
-//            HPAlertShow.sharedInstance.showStatusView(state: true, time: 5, addToView: self, text: "Band Number for Quick Comment not supplied", textFontColor: UIColor.white, textFontSize: 25, position: .Center, viewBackgroundColor: UIColor.black, viewOpacity: 0.5, viewCornerRadius: 10.0, viewBorderWidth: 2.0, viewBorderColor: UIColor.white) { (completed) in
-//                if completed == true{
-//                }
-//            }
-//            return
-//        }
-        
-         guard bandnotoedit.hasValue,   let newquickcomment = quickComment.text  else {  return }
+      
+         guard quickComment.hasValue,   let newquickcomment = quickComment.text  else {  return }
         
 //        guard quickComment.text! != "" else {
 //            HPAlertShow.sharedInstance.showStatusView(state: true, time: 5, addToView: self, text: "Quick Comment not supplied", textFontColor: UIColor.white, textFontSize: 25, position: .Center, viewBackgroundColor: UIColor.black, viewOpacity: 0.5, viewCornerRadius: 10.0, viewBorderWidth: 2.0, viewBorderColor: UIColor.white) { (completed) in
