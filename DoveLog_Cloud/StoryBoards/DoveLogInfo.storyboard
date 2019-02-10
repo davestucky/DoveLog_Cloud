@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hZk-kQ-wi2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dove Log-->
+        <scene sceneID="F6h-LD-13z">
+            <objects>
+                <viewController title="Dove Log" id="bvK-gy-7FP" customClass="DoveViewController" customModule="DoveLog_Cloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7fy-Vo-gdS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Band #                    " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipV-eZ-41y">
+                                <rect key="frame" x="29" y="131" width="114" height="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzq-3y-kPj" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="91" y="84" width="193" height="35"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Yu5-SQ-7ic"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Add New Bird">
+                                    <color key="titleColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" title="Add Bird to Flock"/>
+                                <state key="highlighted" image="wuadbuttonpressed"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="4" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="3NW-ZL-7aq" kind="show" identifier="addBird" id="BG4-um-xTu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ep-wc-n3N" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="16" y="229" width="168" height="35"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="1Vi-r8-CQM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="EDIT">
+                                    <color key="titleColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.043137254901960784" green="0.14117647058823529" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="4" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="v5E-Pk-Mhm" kind="show" identifier="editBird" id="pNh-nH-84I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STg-15-K3O" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="193" y="229" width="168" height="35"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Comment On">
+                                    <color key="titleColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="4" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="tY7-z5-0PW" kind="show" identifier="comfromcom" id="2Mt-XI-dRH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUZ-9j-hDT" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="16" y="302" width="168" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Laid Egg">
+                                    <color key="titleColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="henLayEggPressed:" destination="bvK-gy-7FP" eventType="touchUpInside" id="XvQ-R7-FFG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvD-24-XnW" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="193" y="302" width="168" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="You Put Fake Eggs">
+                                    <color key="titleColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="birdGivenFakeEggs:" destination="bvK-gy-7FP" eventType="touchUpInside" id="COo-gY-tar"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnI-pg-sqp" userLabel="QuicCom">
+                                <rect key="frame" x="294" y="426" width="62" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="Mr1-pj-qx2"/>
+                                </constraints>
+                                <state key="normal" image="quickcomment"/>
+                                <state key="selected" image="wuadbuttonpressed"/>
+                                <state key="highlighted" image="wuadbuttonpressed"/>
+                                <connections>
+                                    <action selector="birdGivenQuickComment:" destination="bvK-gy-7FP" eventType="touchUpInside" id="apG-Wn-5ef"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrL-Nw-5Pj" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="151" y="497" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="tintColor" red="0.0" green="0.97800916429999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="K-Index">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="popInDelay">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="rxA-jy-jgq" kind="show" id="44Z-Ga-wfA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58M-UN-ZAf" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="226" y="497" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="List">
+                                    <color key="titleColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="yWi-Xd-Jv9" kind="show" id="GTU-8i-Xe0"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quick Comment Entry" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OWa-SM-The">
+                                <rect key="frame" x="16" y="441" width="251" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bls-Nb-hI0" userLabel="LateDark" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="15" y="497" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="THq-2e-Jop"/>
+                                </constraints>
+                                <state key="normal" image="lastlightbut" backgroundImage="wuadbuttonpressed"/>
+                                <state key="highlighted" image="wuadbuttonpressed"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="omk-nO-SB7" kind="show" identifier="getlastlight" id="Mg9-LS-aJK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfn-lP-Cpw">
+                                <rect key="frame" x="16" y="282" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZW-Ux-xJL">
+                                <rect key="frame" x="175" y="272" width="25" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Kdm-sL-l0J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kww-na-bgE" userLabel="Train">
+                                <rect key="frame" x="83" y="497" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Tdk-h5-axJ"/>
+                                </constraints>
+                                <state key="normal" image="trainreleasebut"/>
+                                <connections>
+                                    <segue destination="abv-cS-aeE" kind="show" id="TSP-xZ-qhr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a quick comment on" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jJ-5S-DGD">
+                                <rect key="frame" x="16" y="410" width="267" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Amr-YT-QmJ" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="301" y="497" width="58" height="60"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="22L-99-hXj"/>
+                                </constraints>
+                                <state key="normal" title="EGGS">
+                                    <color key="titleColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="67K-tg-GfL" kind="show" id="KYg-JN-3TJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOe-rQ-OL1">
+                                <rect key="frame" x="26" y="563" width="323" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="ZOS-BJ-A4A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNx-Ig-MBR" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="146" y="165" width="70" height="44"/>
+                                <color key="backgroundColor" red="0.72148895263671875" green="0.7216145396232605" blue="0.72148102521896362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="LIST">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="llg-tc-lz7" kind="presentation" identifier="bandNumberGetter" id="Pfa-sC-BbE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or press for :            " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJB-SN-2SS">
+                                <rect key="frame" x="28" y="174" width="116" height="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="for dove to           " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLr-1d-kc4">
+                                <rect key="frame" x="233" y="176" width="104" height="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If egg laid insert cock band #. TBD if unknown." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tS-7B-gfr">
+                                <rect key="frame" x="15" y="379" width="320" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Band #" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vA3-l0-lKc" customClass="UITextFieldX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="146" y="127" width="121" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="warning"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cock/Band" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AS8-z0-Fhu">
+                                <rect key="frame" x="39" y="344" width="105" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.6470588235294118" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mZW-Ux-xJL" firstAttribute="centerX" secondItem="mOe-rQ-OL1" secondAttribute="centerX" id="0OR-pO-W9G"/>
+                            <constraint firstItem="lUZ-9j-hDT" firstAttribute="baseline" secondItem="DvD-24-XnW" secondAttribute="firstBaseline" id="0jo-il-opD"/>
+                            <constraint firstItem="58M-UN-ZAf" firstAttribute="top" secondItem="Amr-YT-QmJ" secondAttribute="top" id="2eF-nF-DEM"/>
+                            <constraint firstItem="mOe-rQ-OL1" firstAttribute="top" secondItem="bls-Nb-hI0" secondAttribute="bottom" constant="6" id="3Xb-T3-zIt"/>
+                            <constraint firstItem="2ep-wc-n3N" firstAttribute="leading" secondItem="7fy-Vo-gdS" secondAttribute="leadingMargin" id="4Xp-ev-NKG"/>
+                            <constraint firstItem="ZnI-pg-sqp" firstAttribute="leading" secondItem="9jJ-5S-DGD" secondAttribute="trailing" constant="11" id="4jo-NI-CfP"/>
+                            <constraint firstItem="ds8-Q8-LSp" firstAttribute="trailing" secondItem="STg-15-K3O" secondAttribute="trailing" constant="14" id="4mB-GA-CGP"/>
+                            <constraint firstItem="OWa-SM-The" firstAttribute="centerY" secondItem="ZnI-pg-sqp" secondAttribute="centerY" id="6cF-O2-1Df"/>
+                            <constraint firstItem="mrL-Nw-5Pj" firstAttribute="leading" secondItem="Kww-na-bgE" secondAttribute="trailing" constant="8" symbolic="YES" id="8Aa-6b-gYH"/>
+                            <constraint firstItem="Kww-na-bgE" firstAttribute="leading" secondItem="bls-Nb-hI0" secondAttribute="trailing" constant="8" symbolic="YES" id="8kA-Eb-cWS"/>
+                            <constraint firstItem="rzq-3y-kPj" firstAttribute="top" secondItem="ds8-Q8-LSp" secondAttribute="top" constant="20" id="8vJ-aY-VjE"/>
+                            <constraint firstItem="2ep-wc-n3N" firstAttribute="top" secondItem="FNx-Ig-MBR" secondAttribute="bottom" constant="20" id="97X-Cw-F9d"/>
+                            <constraint firstItem="ds8-Q8-LSp" firstAttribute="trailing" secondItem="ZnI-pg-sqp" secondAttribute="trailing" constant="19" id="9ei-Fp-KLq"/>
+                            <constraint firstItem="2ep-wc-n3N" firstAttribute="baseline" secondItem="STg-15-K3O" secondAttribute="firstBaseline" id="9fM-J2-m8K"/>
+                            <constraint firstItem="ipV-eZ-41y" firstAttribute="centerX" secondItem="OJB-SN-2SS" secondAttribute="centerX" id="9kY-3h-3DB"/>
+                            <constraint firstItem="2ep-wc-n3N" firstAttribute="top" secondItem="STg-15-K3O" secondAttribute="top" id="AeK-Jg-cuW"/>
+                            <constraint firstItem="lUZ-9j-hDT" firstAttribute="centerX" secondItem="AS8-z0-Fhu" secondAttribute="centerX" constant="8.5" id="BeK-vV-zbn"/>
+                            <constraint firstItem="2ep-wc-n3N" firstAttribute="top" secondItem="OJB-SN-2SS" secondAttribute="bottom" constant="33" id="Bej-ij-KNR"/>
+                            <constraint firstItem="FNx-Ig-MBR" firstAttribute="top" secondItem="vA3-l0-lKc" secondAttribute="bottom" constant="8" symbolic="YES" id="Bh2-sr-8YV"/>
+                            <constraint firstItem="4tS-7B-gfr" firstAttribute="top" secondItem="AS8-z0-Fhu" secondAttribute="bottom" constant="5" id="Bv7-q8-G4o"/>
+                            <constraint firstItem="AS8-z0-Fhu" firstAttribute="leading" secondItem="ds8-Q8-LSp" secondAttribute="leading" constant="39" id="CcP-pJ-koZ"/>
+                            <constraint firstItem="vA3-l0-lKc" firstAttribute="centerX" secondItem="FNx-Ig-MBR" secondAttribute="centerX" constant="25.5" id="DDi-4M-KOz"/>
+                            <constraint firstItem="lUZ-9j-hDT" firstAttribute="top" secondItem="mZW-Ux-xJL" secondAttribute="bottom" constant="8" symbolic="YES" id="F3h-YW-Foa"/>
+                            <constraint firstItem="bls-Nb-hI0" firstAttribute="bottom" secondItem="Kww-na-bgE" secondAttribute="bottom" id="Gh0-ow-gto"/>
+                            <constraint firstItem="rzq-3y-kPj" firstAttribute="leading" secondItem="ds8-Q8-LSp" secondAttribute="leading" constant="91" id="IQV-Wu-fhD"/>
+                            <constraint firstItem="2ep-wc-n3N" firstAttribute="leading" secondItem="cfn-lP-Cpw" secondAttribute="leading" id="Iaf-kt-FbC"/>
+                            <constraint firstItem="OJB-SN-2SS" firstAttribute="top" secondItem="ipV-eZ-41y" secondAttribute="bottom" constant="21" id="IcY-d5-eks"/>
+                            <constraint firstItem="FNx-Ig-MBR" firstAttribute="leading" secondItem="OJB-SN-2SS" secondAttribute="trailing" constant="2" id="J0j-9D-N5h"/>
+                            <constraint firstItem="bls-Nb-hI0" firstAttribute="top" secondItem="OWa-SM-The" secondAttribute="bottom" constant="26" id="J1Y-j6-dz7"/>
+                            <constraint firstItem="AS8-z0-Fhu" firstAttribute="top" secondItem="lUZ-9j-hDT" secondAttribute="bottom" constant="8" symbolic="YES" id="JJX-bS-0JN"/>
+                            <constraint firstItem="9jJ-5S-DGD" firstAttribute="leading" secondItem="OWa-SM-The" secondAttribute="leading" id="MMW-JD-yYJ"/>
+                            <constraint firstItem="mrL-Nw-5Pj" firstAttribute="bottom" secondItem="58M-UN-ZAf" secondAttribute="bottom" id="N5c-Pa-b9K"/>
+                            <constraint firstItem="vA3-l0-lKc" firstAttribute="top" secondItem="rzq-3y-kPj" secondAttribute="bottom" constant="8" symbolic="YES" id="NXJ-Rh-r0Q"/>
+                            <constraint firstItem="FNx-Ig-MBR" firstAttribute="centerX" secondItem="mrL-Nw-5Pj" secondAttribute="centerX" id="ODI-XZ-cyL"/>
+                            <constraint firstItem="4tS-7B-gfr" firstAttribute="leading" secondItem="bls-Nb-hI0" secondAttribute="leading" id="Sqd-px-FEn"/>
+                            <constraint firstItem="vA3-l0-lKc" firstAttribute="leading" secondItem="ipV-eZ-41y" secondAttribute="trailing" constant="3" id="TQa-Kp-o3W"/>
+                            <constraint firstItem="FNx-Ig-MBR" firstAttribute="centerY" secondItem="ZLr-1d-kc4" secondAttribute="centerY" id="VXi-jP-usf"/>
+                            <constraint firstItem="Kww-na-bgE" firstAttribute="top" secondItem="mrL-Nw-5Pj" secondAttribute="top" id="WCT-Dx-DTP"/>
+                            <constraint firstItem="Amr-YT-QmJ" firstAttribute="top" secondItem="ZnI-pg-sqp" secondAttribute="bottom" constant="11" id="WE9-d6-XH9"/>
+                            <constraint firstItem="ds8-Q8-LSp" firstAttribute="trailing" secondItem="AS8-z0-Fhu" secondAttribute="trailing" constant="231" id="WvQ-jS-TZ0"/>
+                            <constraint firstItem="2ep-wc-n3N" firstAttribute="trailing" secondItem="lUZ-9j-hDT" secondAttribute="trailing" id="XWa-89-XL1"/>
+                            <constraint firstItem="vA3-l0-lKc" firstAttribute="trailing" secondItem="FNx-Ig-MBR" secondAttribute="trailing" constant="51" id="YYt-gw-3CR"/>
+                            <constraint firstItem="rzq-3y-kPj" firstAttribute="centerX" secondItem="mZW-Ux-xJL" secondAttribute="centerX" id="Yuo-8r-cyO"/>
+                            <constraint firstItem="9jJ-5S-DGD" firstAttribute="top" secondItem="AS8-z0-Fhu" secondAttribute="bottom" constant="36" id="ZOL-lC-cbq"/>
+                            <constraint firstItem="cfn-lP-Cpw" firstAttribute="top" secondItem="7fy-Vo-gdS" secondAttribute="top" constant="282" id="a6Q-lz-CUg"/>
+                            <constraint firstItem="58M-UN-ZAf" firstAttribute="leading" secondItem="mrL-Nw-5Pj" secondAttribute="trailing" constant="15" id="aLq-0N-9ot"/>
+                            <constraint firstItem="ds8-Q8-LSp" firstAttribute="trailing" secondItem="vA3-l0-lKc" secondAttribute="trailing" constant="108" id="bRY-vy-zCs"/>
+                            <constraint firstItem="mOe-rQ-OL1" firstAttribute="leading" secondItem="ds8-Q8-LSp" secondAttribute="leading" constant="26" id="bm6-Ft-pU5"/>
+                            <constraint firstItem="ipV-eZ-41y" firstAttribute="trailing" secondItem="Kww-na-bgE" secondAttribute="trailing" id="cMI-Zj-h7e"/>
+                            <constraint firstItem="mZW-Ux-xJL" firstAttribute="top" secondItem="2ep-wc-n3N" secondAttribute="bottom" constant="8" symbolic="YES" id="dAN-cq-fBF"/>
+                            <constraint firstItem="STg-15-K3O" firstAttribute="leading" secondItem="2ep-wc-n3N" secondAttribute="trailing" constant="9" id="dJi-hm-CGe"/>
+                            <constraint firstItem="STg-15-K3O" firstAttribute="trailing" secondItem="DvD-24-XnW" secondAttribute="trailing" id="dbS-ok-OQP"/>
+                            <constraint firstItem="58M-UN-ZAf" firstAttribute="baseline" secondItem="Amr-YT-QmJ" secondAttribute="firstBaseline" id="doq-vN-hDm"/>
+                            <constraint firstItem="ZLr-1d-kc4" firstAttribute="leading" secondItem="FNx-Ig-MBR" secondAttribute="trailing" constant="17" id="gGe-Il-cZh"/>
+                            <constraint firstItem="ipV-eZ-41y" firstAttribute="top" secondItem="rzq-3y-kPj" secondAttribute="bottom" constant="12" id="ggl-yi-mxV"/>
+                            <constraint firstItem="bls-Nb-hI0" firstAttribute="top" secondItem="Kww-na-bgE" secondAttribute="top" id="gmi-Wo-xGB"/>
+                            <constraint firstItem="ZnI-pg-sqp" firstAttribute="top" secondItem="DvD-24-XnW" secondAttribute="bottom" constant="90" id="kNg-jt-gEE"/>
+                            <constraint firstItem="STg-15-K3O" firstAttribute="top" secondItem="ZLr-1d-kc4" secondAttribute="bottom" constant="31" id="kkR-Hm-iVC"/>
+                            <constraint firstItem="rzq-3y-kPj" firstAttribute="centerX" secondItem="7fy-Vo-gdS" secondAttribute="centerX" id="lEj-zb-ddQ"/>
+                            <constraint firstItem="cfn-lP-Cpw" firstAttribute="leading" secondItem="lUZ-9j-hDT" secondAttribute="leading" id="mvc-oA-Uxv"/>
+                            <constraint firstItem="ZnI-pg-sqp" firstAttribute="leading" secondItem="OWa-SM-The" secondAttribute="trailing" constant="27" id="njc-kG-9PC"/>
+                            <constraint firstItem="Amr-YT-QmJ" firstAttribute="leading" secondItem="58M-UN-ZAf" secondAttribute="trailing" constant="15" id="ppj-1G-gYs"/>
+                            <constraint firstItem="ds8-Q8-LSp" firstAttribute="trailing" secondItem="ZLr-1d-kc4" secondAttribute="trailing" constant="38" id="qT4-1L-rNG"/>
+                            <constraint firstItem="Amr-YT-QmJ" firstAttribute="trailing" secondItem="7fy-Vo-gdS" secondAttribute="trailingMargin" id="rLZ-9s-fIV"/>
+                            <constraint firstItem="STg-15-K3O" firstAttribute="leading" secondItem="DvD-24-XnW" secondAttribute="leading" id="rlF-2i-HKa"/>
+                            <constraint firstItem="lUZ-9j-hDT" firstAttribute="leading" secondItem="9jJ-5S-DGD" secondAttribute="leading" id="ssf-ba-qcA"/>
+                            <constraint firstItem="ipV-eZ-41y" firstAttribute="leading" secondItem="ds8-Q8-LSp" secondAttribute="leading" constant="29" id="w4e-7e-8aD"/>
+                            <constraint firstItem="DvD-24-XnW" firstAttribute="baseline" secondItem="lUZ-9j-hDT" secondAttribute="firstBaseline" id="wdB-5m-wyJ"/>
+                            <constraint firstItem="mZW-Ux-xJL" firstAttribute="leading" secondItem="ds8-Q8-LSp" secondAttribute="leading" constant="175" id="wkf-x2-Df9"/>
+                            <constraint firstItem="ds8-Q8-LSp" firstAttribute="bottom" secondItem="mOe-rQ-OL1" secondAttribute="bottom" constant="29" id="x6w-NZ-lje"/>
+                            <constraint firstItem="mrL-Nw-5Pj" firstAttribute="top" secondItem="58M-UN-ZAf" secondAttribute="top" id="xqz-Ac-fVb"/>
+                            <constraint firstItem="bls-Nb-hI0" firstAttribute="leading" secondItem="ds8-Q8-LSp" secondAttribute="leading" constant="15" id="z0m-MV-Bej"/>
+                            <constraint firstItem="Kww-na-bgE" firstAttribute="bottom" secondItem="mrL-Nw-5Pj" secondAttribute="bottom" id="zSj-4N-btS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ds8-Q8-LSp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dove Log" id="cXD-yM-T0Q"/>
+                    <connections>
+                        <outlet property="bandnotoedit" destination="vA3-l0-lKc" id="SsN-Kl-Kd4"/>
+                        <outlet property="cockEggMate" destination="AS8-z0-Fhu" id="QLH-TQ-o5f"/>
+                        <outlet property="companyName" destination="mOe-rQ-OL1" id="f4L-nI-u2g"/>
+                        <outlet property="quickComment" destination="OWa-SM-The" id="cMy-MZ-F3r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAn-Qk-lcE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664.79999999999995" y="-3269.4152923538231"/>
+        </scene>
+        <!--BandNumber-->
+        <scene sceneID="a2s-D4-YX2">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="bamd" storyboardName="BandNumber" id="llg-tc-lz7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZC-Td-k58" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338" y="-3748"/>
+        </scene>
+        <!--New Bird-->
+        <scene sceneID="Pbl-34-Ugd">
+            <objects>
+                <viewController title="New Bird" id="3NW-ZL-7aq" customClass="NewBirdViewController" customModule="DoveLog_Cloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="58Y-aw-6X0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mv2-Xe-3tn">
+                                <rect key="frame" x="128" y="283" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Sex" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m44-8n-Yle">
+                                <rect key="frame" x="128" y="317" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Band Source" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1td-ZZ-F1u">
+                                <rect key="frame" x="128" y="94" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Band Year" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JHD-Ak-Fw7">
+                                <rect key="frame" x="128" y="204" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Band Prefix" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F9f-jD-cCF">
+                                <rect key="frame" x="128" y="129" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Band Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YpV-1v-GhD">
+                                <rect key="frame" x="128" y="166" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder=" Hen Band" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WgB-Xg-Xoc">
+                                <rect key="frame" x="128" y="351" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Cock Band" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VEe-UH-Irq">
+                                <rect key="frame" x="127" y="387" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Band Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cu-aZ-TFU">
+                                <rect key="frame" x="17" y="171" width="116" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Band Source" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3E-xd-IBy">
+                                <rect key="frame" x="16" y="99" width="98" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prefix" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpM-81-t3c">
+                                <rect key="frame" x="17" y="134" width="44" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year (YY)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfT-y4-7ga">
+                                <rect key="frame" x="17" y="209" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bird Source" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58R-e9-DMX">
+                                <rect key="frame" x="16" y="247" width="116" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hatch Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdG-8h-1Ev">
+                                <rect key="frame" x="16" y="288" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sex" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6l-xx-STA">
+                                <rect key="frame" x="22" y="321" width="36" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="H hen C cock U unk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4L-az-np7">
+                                <rect key="frame" x="174" y="322" width="112" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hen Band" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZf-SY-hth">
+                                <rect key="frame" x="16" y="356" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cock Band" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hb-km-UKE">
+                                <rect key="frame" x="16" y="392" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Bird Source" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qed-Ip-O2l">
+                                <rect key="frame" x="128" y="242" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbB-ho-vkW" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="137" y="470" width="100" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted" image="wuadbuttonpressed"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animateFrom">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="3NW-ZL-7aq" eventType="touchUpInside" id="Dw4-d4-w2v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vT2-4S-gVO">
+                                <rect key="frame" x="130" y="284" width="105" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="FgI-gk-b8D" kind="presentation" identifier="datehatchedseque" id="FMW-i0-ulf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28162628410000001" green="0.64011436700000002" blue="0.97648721930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Op-rj-vwu"/>
+                    </view>
+                    <connections>
+                        <outlet property="addBandNumber" destination="YpV-1v-GhD" id="jF5-Bm-Cor"/>
+                        <outlet property="addBandPrefix" destination="F9f-jD-cCF" id="onr-ff-P9N"/>
+                        <outlet property="addBandSource" destination="1td-ZZ-F1u" id="lok-zY-oHB"/>
+                        <outlet property="addBandYear" destination="JHD-Ak-Fw7" id="mvY-Ps-nGO"/>
+                        <outlet property="addBirdDOB" destination="Mv2-Xe-3tn" id="YO3-ru-IG0"/>
+                        <outlet property="addBirdSex" destination="m44-8n-Yle" id="ztS-xB-qid"/>
+                        <outlet property="addBirdSource" destination="qed-Ip-O2l" id="p1F-eJ-Yca"/>
+                        <outlet property="addBirthCockBand" destination="VEe-UH-Irq" id="RSz-Mn-kSH"/>
+                        <outlet property="addBirthHenBand" destination="WgB-Xg-Xoc" id="7U2-2Z-32p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aaw-Ab-zFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="-3269.4152923538231"/>
+        </scene>
+        <!--Edit Bird-->
+        <scene sceneID="1ge-Cs-gu3">
+            <objects>
+                <viewController title="Edit Bird" id="v5E-Pk-Mhm" customClass="EditBirdViewController" customModule="DoveLog_Cloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="anD-xI-DUE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Bird Source" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="axd-Q8-NER">
+                                <rect key="frame" x="143" y="181" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Sex" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z4C-qs-8gP">
+                                <rect key="frame" x="143" y="257" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder=" Hen Band" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UTd-2e-d2l">
+                                <rect key="frame" x="142" y="333" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Cock Band" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v1N-CX-gKG">
+                                <rect key="frame" x="141" y="371" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bird Source" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDE-7v-1kW">
+                                <rect key="frame" x="20" y="185" width="96" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.39229401949999998" blue="0.0016537425110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hatch Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHi-Qm-ewE">
+                                <rect key="frame" x="21" y="224" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.39229401949999998" blue="0.0016537425110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sex" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMU-TB-FFj">
+                                <rect key="frame" x="21" y="262" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.39229401949999998" blue="0.0016537425110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="H hen C cock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bE-Ul-fZd">
+                                <rect key="frame" x="212" y="264" width="76" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.39229401949999998" blue="0.0016537425110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hen Band" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGP-Gj-m9H">
+                                <rect key="frame" x="20" y="339" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.39229401949999998" blue="0.0016537425110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cock Band" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKb-pT-sTx">
+                                <rect key="frame" x="21" y="375" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.39229401949999998" blue="0.0016537425110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Training Class" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDi-9L-8Qh">
+                                <rect key="frame" x="20" y="299" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.39229401949999998" blue="0.0016537425110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Training Class" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWf-cT-GyK">
+                                <rect key="frame" x="143" y="295" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Band Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loz-vi-Rr5">
+                                <rect key="frame" x="9" y="82" width="193" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRA-xV-fsK" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="16" y="439" width="180" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.6614082456" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Insert a Comment"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.39229401949999998" blue="0.0016537425110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="tY7-z5-0PW" kind="show" identifier="birdcomments" id="1Ai-Gy-Ygn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krf-2d-SRl">
+                                <rect key="frame" x="12" y="123" width="350" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="YYYY-MM-DD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pTr-Wf-Au6">
+                                <rect key="frame" x="143" y="219" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="hatchDateSelected:" destination="v5E-Pk-Mhm" eventType="editingDidBegin" id="vpz-6c-MHn"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmn-5J-e4i" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="241" y="439" width="118" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.6614082456" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="SAVE"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.39229401949999998" blue="0.0016537425110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveEditPressed:" destination="v5E-Pk-Mhm" eventType="touchUpInside" id="Zby-aq-99A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.97800916429999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="1gI-su-csL"/>
+                    </view>
+                    <connections>
+                        <outlet property="editBandInfo" destination="krf-2d-SRl" id="gMk-vD-bp9"/>
+                        <outlet property="editBirdClassBand" destination="WWf-cT-GyK" id="mdQ-pF-v9Z"/>
+                        <outlet property="editBirdDOB" destination="pTr-Wf-Au6" id="mkN-o9-h9r"/>
+                        <outlet property="editBirdSex" destination="z4C-qs-8gP" id="oOj-B2-H2b"/>
+                        <outlet property="editBirthCockBand" destination="v1N-CX-gKG" id="2Vo-v7-EDS"/>
+                        <outlet property="editBirthHenBand" destination="UTd-2e-d2l" id="FL7-qz-ha5"/>
+                        <outlet property="editbirdsource" destination="axd-Q8-NER" id="Xjk-wD-Pn8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pmD-GE-oSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="-4030.434782608696"/>
+        </scene>
+        <!--Dove Comments-->
+        <scene sceneID="lw7-nA-fga">
+            <objects>
+                <viewController title="Dove Comments" id="tY7-z5-0PW" customClass="BirdCommentViewController" customModule="DoveLog_Cloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="ham-7c-4ar">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXb-sC-8eY">
+                                <rect key="frame" x="16" y="73" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="35" sectionHeaderHeight="40" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="B39-3W-ABK">
+                                <rect key="frame" x="16" y="307" width="343" height="307"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="SNH-xM-BPI" rowHeight="35" style="IBUITableViewCellStyleDefault" id="sbk-nb-7lq">
+                                        <rect key="frame" x="0.0" y="40" width="343" height="35"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sbk-nb-7lq" id="fFm-Qt-O6p">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="34.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SNH-xM-BPI">
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="34.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tY7-z5-0PW" id="jdB-tO-O4o"/>
+                                    <outlet property="delegate" destination="tY7-z5-0PW" id="UjU-hq-SZZ"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tet-8W-5g1">
+                                <rect key="frame" x="16" y="123" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter New Comment:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXQ-Ac-fVu">
+                                <rect key="frame" x="16" y="155" width="164" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Ny-rc-rIQ">
+                                <rect key="frame" x="16" y="178" width="343" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGd-aC-wLe">
+                                <rect key="frame" x="16" y="122" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FgI-gk-b8D" kind="presentation" identifier="editDatePopUp" id="yIb-Ar-ZIT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BOG-hO-u4L">
+                                <rect key="frame" x="189" y="123" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kax-Rr-mgI">
+                                <rect key="frame" x="189" y="123" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rSC-vr-Wod" kind="presentation" identifier="toCommentTypePopUp" id="WX1-Vm-l5d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Mu-J5-t42">
+                                <rect key="frame" x="16" y="105" width="97" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QQ-i4-izH">
+                                <rect key="frame" x="189" y="105" width="170" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAH-Hp-j2d" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="137" y="255" width="100" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.97800916429999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="SAVE"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveCommentPressed:" destination="tY7-z5-0PW" eventType="touchUpInside" id="sAM-zO-2x8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.091172181069850922" green="0.66918426752090454" blue="0.088340736925601959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Ez4-8Z-fd5"/>
+                    </view>
+                    <connections>
+                        <outlet property="bandNoEdit" destination="IXb-sC-8eY" id="oJn-MU-gH9"/>
+                        <outlet property="commentTabView" destination="B39-3W-ABK" id="IZJ-hY-3sI"/>
+                        <outlet property="commentType" destination="BOG-hO-u4L" id="gbQ-H7-voD"/>
+                        <outlet property="dateComment" destination="Tet-8W-5g1" id="FIH-54-594"/>
+                        <outlet property="newComment" destination="4Ny-rc-rIQ" id="ilp-kN-ja6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BeO-xp-dM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="-2497.6011994003002"/>
+        </scene>
+        <!--Dove Log-->
+        <scene sceneID="WIw-GA-q8o">
+            <objects>
+                <navigationController storyboardIdentifier="DoveLofInfo" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hZk-kQ-wi2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dove Log" image="dovelog" selectedImage="dovelog" id="vIa-4a-gVL"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bXJ-h5-J0g">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bvK-gy-7FP" kind="relationship" relationship="rootViewController" id="fqd-fU-kGw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xm6-nf-KzF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-338" y="-3269"/>
+        </scene>
+        <!--DatePopUpViewController-->
+        <scene sceneID="inP-SN-klI">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DatePopUpViewController" storyboardName="DatePopUpViewController" id="FgI-gk-b8D" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LlN-Io-By5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3208" y="-2524"/>
+        </scene>
+        <!--CommentTypePopUpViewController-->
+        <scene sceneID="0zP-oG-Vbp">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CommentTypePopUpViewController" storyboardName="CommentTypePopUpViewController" id="rSC-vr-Wod" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RTl-xD-HW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3209" y="-2479"/>
+        </scene>
+        <!--UIViewController-FoM-4A-8nH-->
+        <scene sceneID="v78-lR-KXf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DoveLogButtons" referencedIdentifier="UIViewController-FoM-4A-8nH" id="rxA-jy-jgq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YbY-iE-pyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747" y="-2363"/>
+        </scene>
+        <!--UIViewController-4U7-mx-j4d-->
+        <scene sceneID="RV2-uZ-64O">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DoveLogButtons" referencedIdentifier="UIViewController-4U7-mx-j4d" id="yWi-Xd-Jv9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMT-I9-O01" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1167" y="-2363"/>
+        </scene>
+        <!--UIViewController-7JB-DT-Jky-->
+        <scene sceneID="OP0-Lx-ypM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DoveLogButtons" referencedIdentifier="UIViewController-7JB-DT-Jky" id="omk-nO-SB7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SFZ-iS-3uC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-70" y="-2360"/>
+        </scene>
+        <!--UIViewController-pRS-eL-XYm-->
+        <scene sceneID="FeC-TN-Idr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DoveLogButtons" referencedIdentifier="UIViewController-pRS-eL-XYm" id="abv-cS-aeE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rDQ-f8-cHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339" y="-2364"/>
+        </scene>
+        <!--UIViewController-DSG-HL-1Bj-->
+        <scene sceneID="Rnd-lM-u4P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DoveLogButtons" referencedIdentifier="UIViewController-DSG-HL-1Bj" id="67K-tg-GfL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggA-Vy-yoU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1591" y="-2360"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dovelog" width="22" height="22"/>
+        <image name="lastlightbut" width="253" height="253"/>
+        <image name="quickcomment" width="84" height="84"/>
+        <image name="trainreleasebut" width="253" height="253"/>
+        <image name="warning" width="225" height="225"/>
+        <image name="wuadbuttonpressed" width="253" height="253"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="FMW-i0-ulf"/>
+        <segue reference="2Mt-XI-dRH"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -3,25 +3,187 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F001D9FA20F679320065AB0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001D9F920F679320065AB0E /* AppDelegate.swift */; };
 		F001D9FC20F679320065AB0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001D9FB20F679320065AB0E /* ViewController.swift */; };
-		F001D9FF20F679320065AB0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F001D9FD20F679320065AB0E /* Main.storyboard */; };
 		F001DA0120F679350065AB0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F001DA0020F679350065AB0E /* Assets.xcassets */; };
 		F001DA0420F679350065AB0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F001DA0220F679350065AB0E /* LaunchScreen.storyboard */; };
+		F001DA0E20F67BAA0065AB0E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F001DA0D20F67BAA0065AB0E /* CloudKit.framework */; };
+		F032D86E21C84A080043E952 /* BandNumberPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F032D86D21C84A080043E952 /* BandNumberPopupViewController.swift */; };
+		F032D87021C856800043E952 /* BandNumber.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F032D86F21C856800043E952 /* BandNumber.storyboard */; };
+		F04E5924216BB58200245CEC /* trainschedcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E5917216BB58000245CEC /* trainschedcell.swift */; };
+		F04E5925216BB58200245CEC /* EditEggViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E5918216BB58100245CEC /* EditEggViewController.swift */; };
+		F04E5926216BB58200245CEC /* TrainReleaseSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E5919216BB58100245CEC /* TrainReleaseSchedule.swift */; };
+		F04E5927216BB58200245CEC /* WUADBirdsWithEggs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E591A216BB58100245CEC /* WUADBirdsWithEggs.swift */; };
+		F04E5928216BB58200245CEC /* DoveEggsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E591B216BB58100245CEC /* DoveEggsViewController.swift */; };
+		F04E5929216BB58200245CEC /* KIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E591C216BB58100245CEC /* KIndexViewController.swift */; };
+		F04E592A216BB58200245CEC /* DoveInventoryTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E591D216BB58100245CEC /* DoveInventoryTable.swift */; };
+		F04E592B216BB58200245CEC /* WUADCustomCellAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E591E216BB58200245CEC /* WUADCustomCellAll.swift */; };
+		F04E592C216BB58200245CEC /* solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E591F216BB58200245CEC /* solar.swift */; };
+		F04E592D216BB58200245CEC /* SunShineTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E5920216BB58200245CEC /* SunShineTime.swift */; };
+		F04E592E216BB58200245CEC /* InventoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E5921216BB58200245CEC /* InventoryCell.swift */; };
+		F04E5930216BB58200245CEC /* TrainingReleaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E5923216BB58200245CEC /* TrainingReleaseVC.swift */; };
+		F0512FAA2173F3E100231A95 /* HPAlertShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FA92173F3E100231A95 /* HPAlertShow.swift */; };
+		F0512FC3217435C100231A95 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FAD217435C100231A95 /* IQTextView.swift */; };
+		F0512FC4217435C100231A95 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FAF217435C100231A95 /* IQPreviousNextView.swift */; };
+		F0512FC5217435C100231A95 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FB0217435C100231A95 /* IQTitleBarButtonItem.swift */; };
+		F0512FC6217435C100231A95 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FB1217435C100231A95 /* IQBarButtonItem.swift */; };
+		F0512FC7217435C100231A95 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FB2217435C100231A95 /* IQToolbar.swift */; };
+		F0512FC8217435C100231A95 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FB3217435C100231A95 /* IQUIView+IQKeyboardToolbar.swift */; };
+		F0512FC9217435C100231A95 /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FB4217435C100231A95 /* IQInvocation.swift */; };
+		F0512FCA217435C100231A95 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FB6217435C100231A95 /* IQKeyboardManagerConstantsInternal.swift */; };
+		F0512FCB217435C100231A95 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FB7217435C100231A95 /* IQKeyboardManagerConstants.swift */; };
+		F0512FCC217435C100231A95 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F0512FB9217435C100231A95 /* IQKeyboardManager.bundle */; };
+		F0512FCD217435C100231A95 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FBA217435C100231A95 /* IQKeyboardReturnKeyHandler.swift */; };
+		F0512FCE217435C100231A95 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FBB217435C100231A95 /* IQKeyboardManager.swift */; };
+		F0512FCF217435C100231A95 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FBE217435C100231A95 /* IQUIScrollView+Additions.swift */; };
+		F0512FD0217435C100231A95 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FBF217435C100231A95 /* IQUIViewController+Additions.swift */; };
+		F0512FD1217435C100231A95 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FC0217435C100231A95 /* IQUITextFieldView+Additions.swift */; };
+		F0512FD2217435C100231A95 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FC1217435C100231A95 /* IQUIView+Hierarchy.swift */; };
+		F0512FD3217435C100231A95 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0512FC2217435C100231A95 /* IQNSArray+Sort.swift */; };
+		F0558EFE2100164E0078B3B6 /* UserDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0558EFC2100164E0078B3B6 /* UserDefaultViewController.swift */; };
+		F07D0ED72102334600B40B36 /* NewTextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07D0ECC2102334500B40B36 /* NewTextFieldX.swift */; };
+		F07D0ED82102334600B40B36 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07D0ECD2102334500B40B36 /* UIButtonX.swift */; };
+		F07D0ED92102334600B40B36 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07D0ECE2102334500B40B36 /* UIImageViewX.swift */; };
+		F07D0EDA2102334600B40B36 /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07D0ECF2102334500B40B36 /* UILabelX.swift */; };
+		F07D0EDB2102334600B40B36 /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07D0ED02102334500B40B36 /* UISliderX.swift */; };
+		F07D0EDC2102334600B40B36 /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07D0ED12102334500B40B36 /* UITextFieldX.swift */; };
+		F07D0EDD2102334600B40B36 /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07D0ED22102334500B40B36 /* UIViewAnchorPoint.swift */; };
+		F07D0EDE2102334600B40B36 /* UIViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07D0ED32102334500B40B36 /* UIViewControllerX.swift */; };
+		F07D0EDF2102334600B40B36 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07D0ED42102334500B40B36 /* UIViewX.swift */; };
+		F07D0EE02102334600B40B36 /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07D0ED52102334500B40B36 /* UIViewXRadialGradient.swift */; };
+		F07D0EE12102334600B40B36 /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07D0ED62102334500B40B36 /* UIVisualEffectViewX.swift */; };
+		F07D0EE32102389D00B40B36 /* DoveLogButtons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F07D0EE22102389D00B40B36 /* DoveLogButtons.storyboard */; };
+		F07D0EE521023AD600B40B36 /* DoveLogInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F07D0EE421023AD600B40B36 /* DoveLogInfo.storyboard */; };
+		F07D0EEB210411A100B40B36 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F07D0EE7210411A100B40B36 /* Contents.json */; };
+		F07D0EEC210411A100B40B36 /* createcomment.png in Resources */ = {isa = PBXBuildFile; fileRef = F07D0EE8210411A100B40B36 /* createcomment.png */; };
+		F07D0EED210411A100B40B36 /* createcomment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F07D0EE9210411A100B40B36 /* createcomment@2x.png */; };
+		F07D0EEE210411A100B40B36 /* createcomment@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F07D0EEA210411A100B40B36 /* createcomment@3x.png */; };
+		F0919863216574DC006D2499 /* CommentTypePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0919862216574DC006D2499 /* CommentTypePopupViewController.swift */; };
+		F0919866216575BA006D2499 /* CommentTypePopUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0919864216575BA006D2499 /* CommentTypePopUpViewController.storyboard */; };
+		F0B8B1F021409D020047BDCC /* FuneralEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B1E221409D010047BDCC /* FuneralEditViewController.swift */; };
+		F0B8B1F121409D020047BDCC /* FuneralInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B1E321409D010047BDCC /* FuneralInfoViewController.swift */; };
+		F0B8B1F221409D020047BDCC /* FuneralLandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B1E421409D010047BDCC /* FuneralLandViewController.swift */; };
+		F0B8B1F321409D020047BDCC /* venueMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B1E621409D020047BDCC /* venueMapViewController.swift */; };
+		F0B8B1F421409D020047BDCC /* WeddingEditVenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B1E721409D020047BDCC /* WeddingEditVenueViewController.swift */; };
+		F0B8B1F521409D020047BDCC /* WeddingEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B1E821409D020047BDCC /* WeddingEditViewController.swift */; };
+		F0B8B1F621409D020047BDCC /* WeddingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B1E921409D020047BDCC /* WeddingInfoViewController.swift */; };
+		F0B8B1F721409D020047BDCC /* WeddingLandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B1EA21409D020047BDCC /* WeddingLandViewController.swift */; };
+		F0B8B1F821409D020047BDCC /* WeddingVenueInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B1EB21409D020047BDCC /* WeddingVenueInfoViewController.swift */; };
+		F0B8B1F921409D020047BDCC /* EventInfoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B1ED21409D020047BDCC /* EventInfoEditViewController.swift */; };
+		F0B8B1FA21409D020047BDCC /* EventInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B1EE21409D020047BDCC /* EventInfoViewController.swift */; };
+		F0B8B1FB21409D020047BDCC /* EventLandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B1EF21409D020047BDCC /* EventLandViewController.swift */; };
+		F0CBBC8620FC27070058EFEC /* DoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CBBC8520FC27070058EFEC /* DoveViewController.swift */; };
+		F0CBBC8920FCEF140058EFEC /* WUADStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CBBC8720FCEF140058EFEC /* WUADStructs.swift */; };
+		F0CBBC8A20FCEF140058EFEC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CBBC8820FCEF140058EFEC /* DataManager.swift */; };
+		F0CBBC8F20FD55270058EFEC /* EditBirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CBBC8D20FD55270058EFEC /* EditBirdViewController.swift */; };
+		F0CBBC9020FD55270058EFEC /* BirdCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CBBC8E20FD55270058EFEC /* BirdCommentViewController.swift */; };
+		F0CBBCAC20FD67EE0058EFEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CBBC9720FD67EE0058EFEC /* Main.storyboard */; };
+		F0CBBCAD20FD67EE0058EFEC /* DatePopUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CBBC9A20FD67EE0058EFEC /* DatePopUpViewController.storyboard */; };
+		F0CBBCB020FD67EE0058EFEC /* EventSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CBBCA120FD67EE0058EFEC /* EventSchedule.storyboard */; };
+		F0CBBCB320FD67EE0058EFEC /* FuneralSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CBBCA820FD67EE0058EFEC /* FuneralSchedule.storyboard */; };
+		F0CBBCB420FD67EE0058EFEC /* WeddingSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CBBCA920FD67EE0058EFEC /* WeddingSchedule.storyboard */; };
+		F0CBBCB620FEA9F30058EFEC /* NewBirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CBBCB520FEA9F30058EFEC /* NewBirdViewController.swift */; };
+		F0CBBCBB20FFFA980058EFEC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CBBCB720FFFA980058EFEC /* Reachability.swift */; };
+		F0CBBCBC20FFFA980058EFEC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CBBCB820FFFA980058EFEC /* HomeViewController.swift */; };
+		F0CBBCBD20FFFA980058EFEC /* DatePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CBBCB920FFFA980058EFEC /* DatePopupViewController.swift */; };
+		F0CBBCBE20FFFA980058EFEC /* CalEventMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CBBCBA20FFFA980058EFEC /* CalEventMaker.swift */; };
+		F0EC404A220E3D1600BA775B /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EC4049220E3D1600BA775B /* UITextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F001D9F620F679320065AB0E /* DoveLog_Cloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoveLog_Cloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F001D9F920F679320065AB0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F001D9FB20F679320065AB0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F001D9FE20F679320065AB0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F001DA0020F679350065AB0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F001DA0320F679350065AB0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F001DA0520F679350065AB0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F001DA0B20F6796A0065AB0E /* DoveLog_Cloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DoveLog_Cloud.entitlements; sourceTree = "<group>"; };
+		F001DA0D20F67BAA0065AB0E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		F032D86D21C84A080043E952 /* BandNumberPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandNumberPopupViewController.swift; sourceTree = "<group>"; };
+		F032D86F21C856800043E952 /* BandNumber.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BandNumber.storyboard; sourceTree = "<group>"; };
+		F04E5917216BB58000245CEC /* trainschedcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trainschedcell.swift; sourceTree = "<group>"; };
+		F04E5918216BB58100245CEC /* EditEggViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditEggViewController.swift; sourceTree = "<group>"; };
+		F04E5919216BB58100245CEC /* TrainReleaseSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainReleaseSchedule.swift; sourceTree = "<group>"; };
+		F04E591A216BB58100245CEC /* WUADBirdsWithEggs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WUADBirdsWithEggs.swift; sourceTree = "<group>"; };
+		F04E591B216BB58100245CEC /* DoveEggsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoveEggsViewController.swift; sourceTree = "<group>"; };
+		F04E591C216BB58100245CEC /* KIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIndexViewController.swift; sourceTree = "<group>"; };
+		F04E591D216BB58100245CEC /* DoveInventoryTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoveInventoryTable.swift; sourceTree = "<group>"; };
+		F04E591E216BB58200245CEC /* WUADCustomCellAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WUADCustomCellAll.swift; sourceTree = "<group>"; };
+		F04E591F216BB58200245CEC /* solar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = solar.swift; sourceTree = "<group>"; };
+		F04E5920216BB58200245CEC /* SunShineTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunShineTime.swift; sourceTree = "<group>"; };
+		F04E5921216BB58200245CEC /* InventoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryCell.swift; sourceTree = "<group>"; };
+		F04E5923216BB58200245CEC /* TrainingReleaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingReleaseVC.swift; sourceTree = "<group>"; };
+		F0512FA92173F3E100231A95 /* HPAlertShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPAlertShow.swift; sourceTree = "<group>"; };
+		F0512FAD217435C100231A95 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		F0512FAF217435C100231A95 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		F0512FB0217435C100231A95 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		F0512FB1217435C100231A95 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		F0512FB2217435C100231A95 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		F0512FB3217435C100231A95 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		F0512FB4217435C100231A95 /* IQInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQInvocation.swift; sourceTree = "<group>"; };
+		F0512FB6217435C100231A95 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		F0512FB7217435C100231A95 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		F0512FB9217435C100231A95 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		F0512FBA217435C100231A95 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		F0512FBB217435C100231A95 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		F0512FBC217435C100231A95 /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerSwift.h; sourceTree = "<group>"; };
+		F0512FBE217435C100231A95 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		F0512FBF217435C100231A95 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		F0512FC0217435C100231A95 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		F0512FC1217435C100231A95 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		F0512FC2217435C100231A95 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		F0558EFC2100164E0078B3B6 /* UserDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultViewController.swift; sourceTree = "<group>"; };
+		F07D0ECC2102334500B40B36 /* NewTextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTextFieldX.swift; sourceTree = "<group>"; };
+		F07D0ECD2102334500B40B36 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		F07D0ECE2102334500B40B36 /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
+		F07D0ECF2102334500B40B36 /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
+		F07D0ED02102334500B40B36 /* UISliderX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
+		F07D0ED12102334500B40B36 /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
+		F07D0ED22102334500B40B36 /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnchorPoint.swift; sourceTree = "<group>"; };
+		F07D0ED32102334500B40B36 /* UIViewControllerX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerX.swift; sourceTree = "<group>"; };
+		F07D0ED42102334500B40B36 /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		F07D0ED52102334500B40B36 /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
+		F07D0ED62102334500B40B36 /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
+		F07D0EE22102389D00B40B36 /* DoveLogButtons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DoveLogButtons.storyboard; sourceTree = "<group>"; };
+		F07D0EE421023AD600B40B36 /* DoveLogInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DoveLogInfo.storyboard; sourceTree = "<group>"; };
+		F07D0EE7210411A100B40B36 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		F07D0EE8210411A100B40B36 /* createcomment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createcomment.png; sourceTree = "<group>"; };
+		F07D0EE9210411A100B40B36 /* createcomment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "createcomment@2x.png"; sourceTree = "<group>"; };
+		F07D0EEA210411A100B40B36 /* createcomment@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "createcomment@3x.png"; sourceTree = "<group>"; };
+		F0919862216574DC006D2499 /* CommentTypePopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTypePopupViewController.swift; sourceTree = "<group>"; };
+		F0919865216575BA006D2499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DoveLog_Cloud/StoryBoards/Base.lproj/CommentTypePopUpViewController.storyboard; sourceTree = "<group>"; };
+		F0B8B1E221409D010047BDCC /* FuneralEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuneralEditViewController.swift; sourceTree = "<group>"; };
+		F0B8B1E321409D010047BDCC /* FuneralInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuneralInfoViewController.swift; sourceTree = "<group>"; };
+		F0B8B1E421409D010047BDCC /* FuneralLandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuneralLandViewController.swift; sourceTree = "<group>"; };
+		F0B8B1E621409D020047BDCC /* venueMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = venueMapViewController.swift; sourceTree = "<group>"; };
+		F0B8B1E721409D020047BDCC /* WeddingEditVenueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingEditVenueViewController.swift; sourceTree = "<group>"; };
+		F0B8B1E821409D020047BDCC /* WeddingEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingEditViewController.swift; sourceTree = "<group>"; };
+		F0B8B1E921409D020047BDCC /* WeddingInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingInfoViewController.swift; sourceTree = "<group>"; };
+		F0B8B1EA21409D020047BDCC /* WeddingLandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingLandViewController.swift; sourceTree = "<group>"; };
+		F0B8B1EB21409D020047BDCC /* WeddingVenueInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingVenueInfoViewController.swift; sourceTree = "<group>"; };
+		F0B8B1ED21409D020047BDCC /* EventInfoEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInfoEditViewController.swift; sourceTree = "<group>"; };
+		F0B8B1EE21409D020047BDCC /* EventInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInfoViewController.swift; sourceTree = "<group>"; };
+		F0B8B1EF21409D020047BDCC /* EventLandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLandViewController.swift; sourceTree = "<group>"; };
+		F0CBBC8520FC27070058EFEC /* DoveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoveViewController.swift; sourceTree = "<group>"; };
+		F0CBBC8720FCEF140058EFEC /* WUADStructs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WUADStructs.swift; sourceTree = "<group>"; };
+		F0CBBC8820FCEF140058EFEC /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F0CBBC8D20FD55270058EFEC /* EditBirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBirdViewController.swift; sourceTree = "<group>"; };
+		F0CBBC8E20FD55270058EFEC /* BirdCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirdCommentViewController.swift; sourceTree = "<group>"; };
+		F0CBBC9820FD67EE0058EFEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0CBBC9B20FD67EE0058EFEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DatePopUpViewController.storyboard; sourceTree = "<group>"; };
+		F0CBBCA220FD67EE0058EFEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EventSchedule.storyboard; sourceTree = "<group>"; };
+		F0CBBCA820FD67EE0058EFEC /* FuneralSchedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FuneralSchedule.storyboard; sourceTree = "<group>"; };
+		F0CBBCA920FD67EE0058EFEC /* WeddingSchedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WeddingSchedule.storyboard; sourceTree = "<group>"; };
+		F0CBBCB520FEA9F30058EFEC /* NewBirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBirdViewController.swift; sourceTree = "<group>"; };
+		F0CBBCB720FFFA980058EFEC /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F0CBBCB820FFFA980058EFEC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F0CBBCB920FFFA980058EFEC /* DatePopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePopupViewController.swift; sourceTree = "<group>"; };
+		F0CBBCBA20FFFA980058EFEC /* CalEventMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalEventMaker.swift; sourceTree = "<group>"; };
+		F0EC4049220E3D1600BA775B /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F001DA0E20F67BAA0065AB0E /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				F001D9F820F679320065AB0E /* DoveLog_Cloud */,
+				F001DA0C20F67BAA0065AB0E /* Frameworks */,
 				F001D9F720F679320065AB0E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,13 +219,206 @@
 			isa = PBXGroup;
 			children = (
 				F001D9F920F679320065AB0E /* AppDelegate.swift */,
-				F001D9FB20F679320065AB0E /* ViewController.swift */,
-				F001D9FD20F679320065AB0E /* Main.storyboard */,
 				F001DA0020F679350065AB0E /* Assets.xcassets */,
-				F001DA0220F679350065AB0E /* LaunchScreen.storyboard */,
+				F032D86D21C84A080043E952 /* BandNumberPopupViewController.swift */,
+				F0CBBCBA20FFFA980058EFEC /* CalEventMaker.swift */,
+				F0919862216574DC006D2499 /* CommentTypePopupViewController.swift */,
+				F07D0EE6210411A000B40B36 /* createcomblue.imageset */,
+				F0CBBC8820FCEF140058EFEC /* DataManager.swift */,
+				F0CBBCB920FFFA980058EFEC /* DatePopupViewController.swift */,
+				F07D0ECB2102334500B40B36 /* DesignableX */,
+				F0CBBC9120FD56010058EFEC /* Dove Log */,
+				F001DA0B20F6796A0065AB0E /* DoveLog_Cloud.entitlements */,
+				F0B8B1EC21409D020047BDCC /* Events */,
+				F0B8B1E121409D010047BDCC /* Funerals */,
+				F0CBBCB820FFFA980058EFEC /* HomeViewController.swift */,
 				F001DA0520F679350065AB0E /* Info.plist */,
+				F0512FAB217435C100231A95 /* IQKeyboardManagerSwift */,
+				F0CBBCB720FFFA980058EFEC /* Reachability.swift */,
+				F0CBBC9220FD67EE0058EFEC /* StoryBoards */,
+				F0558EFC2100164E0078B3B6 /* UserDefaultViewController.swift */,
+				F001D9FB20F679320065AB0E /* ViewController.swift */,
+				F0B8B1E521409D020047BDCC /* Weddings */,
+				F0CBBC8720FCEF140058EFEC /* WUADStructs.swift */,
+				F0EC4049220E3D1600BA775B /* UITextFieldExtension.swift */,
 			);
 			path = DoveLog_Cloud;
+			sourceTree = "<group>";
+		};
+		F001DA0C20F67BAA0065AB0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F001DA0D20F67BAA0065AB0E /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0512FAB217435C100231A95 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F0512FAC217435C100231A95 /* IQTextView */,
+				F0512FAE217435C100231A95 /* IQToolbar */,
+				F0512FB5217435C100231A95 /* Constants */,
+				F0512FB8217435C100231A95 /* Resources */,
+				F0512FBA217435C100231A95 /* IQKeyboardReturnKeyHandler.swift */,
+				F0512FBB217435C100231A95 /* IQKeyboardManager.swift */,
+				F0512FBC217435C100231A95 /* IQKeyboardManagerSwift.h */,
+				F0512FBD217435C100231A95 /* Categories */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		F0512FAC217435C100231A95 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				F0512FAD217435C100231A95 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		F0512FAE217435C100231A95 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				F0512FAF217435C100231A95 /* IQPreviousNextView.swift */,
+				F0512FB0217435C100231A95 /* IQTitleBarButtonItem.swift */,
+				F0512FB1217435C100231A95 /* IQBarButtonItem.swift */,
+				F0512FB2217435C100231A95 /* IQToolbar.swift */,
+				F0512FB3217435C100231A95 /* IQUIView+IQKeyboardToolbar.swift */,
+				F0512FB4217435C100231A95 /* IQInvocation.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		F0512FB5217435C100231A95 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F0512FB6217435C100231A95 /* IQKeyboardManagerConstantsInternal.swift */,
+				F0512FB7217435C100231A95 /* IQKeyboardManagerConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F0512FB8217435C100231A95 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0512FB9217435C100231A95 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F0512FBD217435C100231A95 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F0512FBE217435C100231A95 /* IQUIScrollView+Additions.swift */,
+				F0512FBF217435C100231A95 /* IQUIViewController+Additions.swift */,
+				F0512FC0217435C100231A95 /* IQUITextFieldView+Additions.swift */,
+				F0512FC1217435C100231A95 /* IQUIView+Hierarchy.swift */,
+				F0512FC2217435C100231A95 /* IQNSArray+Sort.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F07D0ECB2102334500B40B36 /* DesignableX */ = {
+			isa = PBXGroup;
+			children = (
+				F0512FA92173F3E100231A95 /* HPAlertShow.swift */,
+				F07D0ECC2102334500B40B36 /* NewTextFieldX.swift */,
+				F07D0ECD2102334500B40B36 /* UIButtonX.swift */,
+				F07D0ECE2102334500B40B36 /* UIImageViewX.swift */,
+				F07D0ECF2102334500B40B36 /* UILabelX.swift */,
+				F07D0ED02102334500B40B36 /* UISliderX.swift */,
+				F07D0ED12102334500B40B36 /* UITextFieldX.swift */,
+				F07D0ED22102334500B40B36 /* UIViewAnchorPoint.swift */,
+				F07D0ED32102334500B40B36 /* UIViewControllerX.swift */,
+				F07D0ED42102334500B40B36 /* UIViewX.swift */,
+				F07D0ED52102334500B40B36 /* UIViewXRadialGradient.swift */,
+				F07D0ED62102334500B40B36 /* UIVisualEffectViewX.swift */,
+			);
+			path = DesignableX;
+			sourceTree = "<group>";
+		};
+		F07D0EE6210411A000B40B36 /* createcomblue.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				F07D0EE7210411A100B40B36 /* Contents.json */,
+				F07D0EE8210411A100B40B36 /* createcomment.png */,
+				F07D0EE9210411A100B40B36 /* createcomment@2x.png */,
+				F07D0EEA210411A100B40B36 /* createcomment@3x.png */,
+			);
+			path = createcomblue.imageset;
+			sourceTree = "<group>";
+		};
+		F0B8B1E121409D010047BDCC /* Funerals */ = {
+			isa = PBXGroup;
+			children = (
+				F0B8B1E221409D010047BDCC /* FuneralEditViewController.swift */,
+				F0B8B1E321409D010047BDCC /* FuneralInfoViewController.swift */,
+				F0B8B1E421409D010047BDCC /* FuneralLandViewController.swift */,
+			);
+			path = Funerals;
+			sourceTree = "<group>";
+		};
+		F0B8B1E521409D020047BDCC /* Weddings */ = {
+			isa = PBXGroup;
+			children = (
+				F0B8B1E621409D020047BDCC /* venueMapViewController.swift */,
+				F0B8B1E721409D020047BDCC /* WeddingEditVenueViewController.swift */,
+				F0B8B1E821409D020047BDCC /* WeddingEditViewController.swift */,
+				F0B8B1E921409D020047BDCC /* WeddingInfoViewController.swift */,
+				F0B8B1EA21409D020047BDCC /* WeddingLandViewController.swift */,
+				F0B8B1EB21409D020047BDCC /* WeddingVenueInfoViewController.swift */,
+			);
+			path = Weddings;
+			sourceTree = "<group>";
+		};
+		F0B8B1EC21409D020047BDCC /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				F0B8B1ED21409D020047BDCC /* EventInfoEditViewController.swift */,
+				F0B8B1EE21409D020047BDCC /* EventInfoViewController.swift */,
+				F0B8B1EF21409D020047BDCC /* EventLandViewController.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		F0CBBC9120FD56010058EFEC /* Dove Log */ = {
+			isa = PBXGroup;
+			children = (
+				F0CBBC8E20FD55270058EFEC /* BirdCommentViewController.swift */,
+				F04E591B216BB58100245CEC /* DoveEggsViewController.swift */,
+				F04E591D216BB58100245CEC /* DoveInventoryTable.swift */,
+				F0CBBC8520FC27070058EFEC /* DoveViewController.swift */,
+				F0CBBC8D20FD55270058EFEC /* EditBirdViewController.swift */,
+				F04E5918216BB58100245CEC /* EditEggViewController.swift */,
+				F04E5921216BB58200245CEC /* InventoryCell.swift */,
+				F04E591C216BB58100245CEC /* KIndexViewController.swift */,
+				F0CBBCB520FEA9F30058EFEC /* NewBirdViewController.swift */,
+				F04E591F216BB58200245CEC /* solar.swift */,
+				F04E5920216BB58200245CEC /* SunShineTime.swift */,
+				F04E5923216BB58200245CEC /* TrainingReleaseVC.swift */,
+				F04E5919216BB58100245CEC /* TrainReleaseSchedule.swift */,
+				F04E5917216BB58000245CEC /* trainschedcell.swift */,
+				F04E591A216BB58100245CEC /* WUADBirdsWithEggs.swift */,
+				F04E591E216BB58200245CEC /* WUADCustomCellAll.swift */,
+			);
+			path = "Dove Log";
+			sourceTree = "<group>";
+		};
+		F0CBBC9220FD67EE0058EFEC /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				F032D86F21C856800043E952 /* BandNumber.storyboard */,
+				F0919864216575BA006D2499 /* CommentTypePopUpViewController.storyboard */,
+				F0CBBC9A20FD67EE0058EFEC /* DatePopUpViewController.storyboard */,
+				F07D0EE22102389D00B40B36 /* DoveLogButtons.storyboard */,
+				F07D0EE421023AD600B40B36 /* DoveLogInfo.storyboard */,
+				F0CBBCA120FD67EE0058EFEC /* EventSchedule.storyboard */,
+				F0CBBCA820FD67EE0058EFEC /* FuneralSchedule.storyboard */,
+				F001DA0220F679350065AB0E /* LaunchScreen.storyboard */,
+				F0CBBC9720FD67EE0058EFEC /* Main.storyboard */,
+				F0CBBCA920FD67EE0058EFEC /* WeddingSchedule.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,11 +453,20 @@
 				TargetAttributes = {
 					F001D9F520F679320065AB0E = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
 			buildConfigurationList = F001D9F120F679320065AB0E /* Build configuration list for PBXProject "DoveLog_Cloud" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -124,7 +490,20 @@
 			files = (
 				F001DA0420F679350065AB0E /* LaunchScreen.storyboard in Resources */,
 				F001DA0120F679350065AB0E /* Assets.xcassets in Resources */,
-				F001D9FF20F679320065AB0E /* Main.storyboard in Resources */,
+				F0CBBCB320FD67EE0058EFEC /* FuneralSchedule.storyboard in Resources */,
+				F0CBBCAC20FD67EE0058EFEC /* Main.storyboard in Resources */,
+				F07D0EED210411A100B40B36 /* createcomment@2x.png in Resources */,
+				F0512FCC217435C100231A95 /* IQKeyboardManager.bundle in Resources */,
+				F07D0EEE210411A100B40B36 /* createcomment@3x.png in Resources */,
+				F0919866216575BA006D2499 /* CommentTypePopUpViewController.storyboard in Resources */,
+				F07D0EE521023AD600B40B36 /* DoveLogInfo.storyboard in Resources */,
+				F07D0EEB210411A100B40B36 /* Contents.json in Resources */,
+				F032D87021C856800043E952 /* BandNumber.storyboard in Resources */,
+				F07D0EEC210411A100B40B36 /* createcomment.png in Resources */,
+				F0CBBCB020FD67EE0058EFEC /* EventSchedule.storyboard in Resources */,
+				F0CBBCB420FD67EE0058EFEC /* WeddingSchedule.storyboard in Resources */,
+				F0CBBCAD20FD67EE0058EFEC /* DatePopUpViewController.storyboard in Resources */,
+				F07D0EE32102389D00B40B36 /* DoveLogButtons.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,28 +514,118 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07D0EDF2102334600B40B36 /* UIViewX.swift in Sources */,
+				F07D0EE12102334600B40B36 /* UIVisualEffectViewX.swift in Sources */,
+				F04E5930216BB58200245CEC /* TrainingReleaseVC.swift in Sources */,
+				F07D0EE02102334600B40B36 /* UIViewXRadialGradient.swift in Sources */,
+				F07D0ED72102334600B40B36 /* NewTextFieldX.swift in Sources */,
+				F0EC404A220E3D1600BA775B /* UITextFieldExtension.swift in Sources */,
+				F0919863216574DC006D2499 /* CommentTypePopupViewController.swift in Sources */,
+				F032D86E21C84A080043E952 /* BandNumberPopupViewController.swift in Sources */,
+				F0B8B1F121409D020047BDCC /* FuneralInfoViewController.swift in Sources */,
+				F0CBBCB620FEA9F30058EFEC /* NewBirdViewController.swift in Sources */,
+				F0512FC5217435C100231A95 /* IQTitleBarButtonItem.swift in Sources */,
+				F0CBBC8620FC27070058EFEC /* DoveViewController.swift in Sources */,
+				F0B8B1F921409D020047BDCC /* EventInfoEditViewController.swift in Sources */,
+				F04E5926216BB58200245CEC /* TrainReleaseSchedule.swift in Sources */,
+				F0512FAA2173F3E100231A95 /* HPAlertShow.swift in Sources */,
+				F0512FCA217435C100231A95 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				F0CBBC8F20FD55270058EFEC /* EditBirdViewController.swift in Sources */,
+				F0512FC7217435C100231A95 /* IQToolbar.swift in Sources */,
+				F07D0ED92102334600B40B36 /* UIImageViewX.swift in Sources */,
+				F0CBBC8A20FCEF140058EFEC /* DataManager.swift in Sources */,
+				F0CBBCBE20FFFA980058EFEC /* CalEventMaker.swift in Sources */,
+				F0512FC9217435C100231A95 /* IQInvocation.swift in Sources */,
+				F0B8B1F321409D020047BDCC /* venueMapViewController.swift in Sources */,
+				F0512FD2217435C100231A95 /* IQUIView+Hierarchy.swift in Sources */,
+				F07D0EDC2102334600B40B36 /* UITextFieldX.swift in Sources */,
+				F0CBBCBD20FFFA980058EFEC /* DatePopupViewController.swift in Sources */,
+				F0B8B1F021409D020047BDCC /* FuneralEditViewController.swift in Sources */,
+				F0512FD1217435C100231A95 /* IQUITextFieldView+Additions.swift in Sources */,
+				F04E592D216BB58200245CEC /* SunShineTime.swift in Sources */,
+				F0512FCF217435C100231A95 /* IQUIScrollView+Additions.swift in Sources */,
+				F07D0EDA2102334600B40B36 /* UILabelX.swift in Sources */,
+				F0512FC6217435C100231A95 /* IQBarButtonItem.swift in Sources */,
+				F0512FCB217435C100231A95 /* IQKeyboardManagerConstants.swift in Sources */,
+				F04E592C216BB58200245CEC /* solar.swift in Sources */,
+				F0512FC8217435C100231A95 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				F0CBBC8920FCEF140058EFEC /* WUADStructs.swift in Sources */,
+				F0CBBC9020FD55270058EFEC /* BirdCommentViewController.swift in Sources */,
+				F0CBBCBC20FFFA980058EFEC /* HomeViewController.swift in Sources */,
+				F0B8B1FB21409D020047BDCC /* EventLandViewController.swift in Sources */,
+				F0512FC4217435C100231A95 /* IQPreviousNextView.swift in Sources */,
+				F04E5925216BB58200245CEC /* EditEggViewController.swift in Sources */,
+				F07D0EDB2102334600B40B36 /* UISliderX.swift in Sources */,
+				F07D0EDD2102334600B40B36 /* UIViewAnchorPoint.swift in Sources */,
 				F001D9FC20F679320065AB0E /* ViewController.swift in Sources */,
+				F07D0EDE2102334600B40B36 /* UIViewControllerX.swift in Sources */,
+				F04E5929216BB58200245CEC /* KIndexViewController.swift in Sources */,
+				F04E5928216BB58200245CEC /* DoveEggsViewController.swift in Sources */,
+				F07D0ED82102334600B40B36 /* UIButtonX.swift in Sources */,
+				F0B8B1FA21409D020047BDCC /* EventInfoViewController.swift in Sources */,
+				F04E5927216BB58200245CEC /* WUADBirdsWithEggs.swift in Sources */,
+				F0558EFE2100164E0078B3B6 /* UserDefaultViewController.swift in Sources */,
+				F04E592B216BB58200245CEC /* WUADCustomCellAll.swift in Sources */,
+				F0CBBCBB20FFFA980058EFEC /* Reachability.swift in Sources */,
+				F0512FD3217435C100231A95 /* IQNSArray+Sort.swift in Sources */,
+				F04E5924216BB58200245CEC /* trainschedcell.swift in Sources */,
+				F0B8B1F721409D020047BDCC /* WeddingLandViewController.swift in Sources */,
+				F0B8B1F221409D020047BDCC /* FuneralLandViewController.swift in Sources */,
+				F0B8B1F421409D020047BDCC /* WeddingEditVenueViewController.swift in Sources */,
+				F0512FD0217435C100231A95 /* IQUIViewController+Additions.swift in Sources */,
+				F04E592A216BB58200245CEC /* DoveInventoryTable.swift in Sources */,
+				F0B8B1F621409D020047BDCC /* WeddingInfoViewController.swift in Sources */,
+				F0512FCD217435C100231A95 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				F04E592E216BB58200245CEC /* InventoryCell.swift in Sources */,
 				F001D9FA20F679320065AB0E /* AppDelegate.swift in Sources */,
+				F0512FCE217435C100231A95 /* IQKeyboardManager.swift in Sources */,
+				F0512FC3217435C100231A95 /* IQTextView.swift in Sources */,
+				F0B8B1F521409D020047BDCC /* WeddingEditViewController.swift in Sources */,
+				F0B8B1F821409D020047BDCC /* WeddingVenueInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F001D9FD20F679320065AB0E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F001D9FE20F679320065AB0E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F001DA0220F679350065AB0E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F001DA0320F679350065AB0E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F0919864216575BA006D2499 /* CommentTypePopUpViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0919865216575BA006D2499 /* Base */,
+			);
+			name = CommentTypePopUpViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		F0CBBC9720FD67EE0058EFEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0CBBC9820FD67EE0058EFEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0CBBC9A20FD67EE0058EFEC /* DatePopUpViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0CBBC9B20FD67EE0058EFEC /* Base */,
+			);
+			name = DatePopUpViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		F0CBBCA120FD67EE0058EFEC /* EventSchedule.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0CBBCA220FD67EE0058EFEC /* Base */,
+			);
+			name = EventSchedule.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -280,16 +749,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DoveLog_Cloud/DoveLog_Cloud.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SASD994THB;
 				INFOPLIST_FILE = DoveLog_Cloud/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Compusult.DoveLog-Cloud";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -298,16 +769,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DoveLog_Cloud/DoveLog_Cloud.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SASD994THB;
 				INFOPLIST_FILE = DoveLog_Cloud/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Compusult.DoveLog-Cloud";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
