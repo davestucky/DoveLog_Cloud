@@ -10,6 +10,7 @@ import UIKit
 
 extension UITextField   {
     var hasValue: Bool  {
+        rightViewMode = .never
         guard text == "" else { return true }
         
         let imageView = UIImageView(frame: CGRect (x: 0,  y:0, width: 30, height:20) )

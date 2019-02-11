@@ -142,10 +142,10 @@ class DoveViewController: UIViewController {
                     print(error)
                     
                 }else{
-                    HPAlertShow.sharedInstance.showStatusView(state: true, time: 5, addToView: self, text: "Band Number \(newbandedit) given Fake Eggs", textFontColor: UIColor.white, textFontSize: 25, position: .Center, viewBackgroundColor: UIColor.black, viewOpacity: 0.5, viewCornerRadius: 10.0, viewBorderWidth: 2.0, viewBorderColor: UIColor.white) { (completed) in
-                        if completed == true{
-                        }
-                    }
+//                    HPAlertShow.sharedInstance.showStatusView(state: true, time: 2, addToView: self, text: "Band Number \(newbandedit) given Fake Eggs comment", textFontColor: UIColor.white, textFontSize: 25, position: .Center, viewBackgroundColor: UIColor.black, viewOpacity: 0.5, viewCornerRadius: 10.0, viewBorderWidth: 2.0, viewBorderColor: UIColor.white) { (completed) in
+//                        if completed == true{
+//                        }
+//                    }
                 }
             }
             
@@ -167,7 +167,7 @@ class DoveViewController: UIViewController {
                 if let error = error {
                     print(error)
                 }else{
-                    HPAlertShow.sharedInstance.showStatusView(state: true, time: 5, addToView: self, text: "Band #  \(self.bandnotoedit.text!) given FAKE eggs", textFontColor: UIColor.white, textFontSize: 25, position: .Center, viewBackgroundColor: UIColor.black, viewOpacity: 0.5, viewCornerRadius: 10.0, viewBorderWidth: 2.0, viewBorderColor: UIColor.white) { (completed) in
+                    HPAlertShow.sharedInstance.showStatusView(state: true, time: 2, addToView: self, text: "Band #  \(newbandedit) given FAKE eggs", textFontColor: UIColor.white, textFontSize: 16, position: .Center, viewBackgroundColor: UIColor.black, viewOpacity: 0.5, viewCornerRadius: 10.0, viewBorderWidth: 2.0, viewBorderColor: UIColor.white) { (completed) in
                         if completed == true{
                         }
                     }
@@ -186,15 +186,7 @@ class DoveViewController: UIViewController {
       
          guard quickComment.hasValue,   let newquickcomment = quickComment.text  else {  return }
         
-//        guard quickComment.text! != "" else {
-//            HPAlertShow.sharedInstance.showStatusView(state: true, time: 5, addToView: self, text: "Quick Comment not supplied", textFontColor: UIColor.white, textFontSize: 25, position: .Center, viewBackgroundColor: UIColor.black, viewOpacity: 0.5, viewCornerRadius: 10.0, viewBorderWidth: 2.0, viewBorderColor: UIColor.white) { (completed) in
-//                if completed == true{
-//                }
-//            }
-//            return
-//        }
-        
-        DateConfigurator()
+     DateConfigurator()
         //hack
         let record = CKRecord(recordType: "tblBandComments")
         
@@ -219,6 +211,7 @@ class DoveViewController: UIViewController {
             
         }
         bandnotoedit.text = ""
+        quickComment.text = ""
     }
     //End Quick Comments
    
