@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7eB-hu-QKx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date Popup View Controller-->
+        <scene sceneID="v2P-EO-UgY">
+            <objects>
+                <viewController storyboardIdentifier="DatePopupViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7eB-hu-QKx" customClass="DatePopupViewController" customModule="DoveLog_Cloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q69-0u-POk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHM-22-Hl8">
+                                <rect key="frame" x="25.5" y="228" width="324" height="246"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="uTX-9E-RZK">
+                                        <rect key="frame" x="0.0" y="15" width="320" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="536723310.31672001">
+                                            <!--2018-01-04 01:48:30 +0000-->
+                                        </date>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uTX-9E-RZK" secondAttribute="trailing" constant="4" id="VSt-3L-mXh"/>
+                                    <constraint firstItem="uTX-9E-RZK" firstAttribute="leading" secondItem="MHM-22-Hl8" secondAttribute="leading" id="dWU-87-KSi"/>
+                                    <constraint firstItem="uTX-9E-RZK" firstAttribute="centerY" secondItem="MHM-22-Hl8" secondAttribute="centerY" id="kg9-4m-9ya"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Select Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AE3-mF-HsP">
+                                <rect key="frame" x="26" y="187" width="324" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ska-Ov-aU6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIZ-Rm-lK5" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="25.5" y="474" width="324" height="44"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="K86-dp-t0q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <size key="titleShadowOffset" width="7" height="4"/>
+                                <state key="normal" title="Save Date"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="15" height="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveDate_TouchUpInside:" destination="7eB-hu-QKx" eventType="touchUpInside" id="pAg-vF-nzV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70681748872043704" green="0.70681748872043704" blue="0.70681748872043704" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AE3-mF-HsP" firstAttribute="centerX" secondItem="Q69-0u-POk" secondAttribute="centerX" id="3Vs-1z-UBi"/>
+                            <constraint firstItem="MHM-22-Hl8" firstAttribute="trailing" secondItem="HIZ-Rm-lK5" secondAttribute="trailing" id="O0i-oS-rNY"/>
+                            <constraint firstItem="MHM-22-Hl8" firstAttribute="centerX" secondItem="AE3-mF-HsP" secondAttribute="centerX" id="jeF-wD-Un7"/>
+                            <constraint firstItem="kV0-ST-AFz" firstAttribute="bottom" secondItem="HIZ-Rm-lK5" secondAttribute="bottom" constant="149" id="nar-LD-0Y0"/>
+                            <constraint firstItem="MHM-22-Hl8" firstAttribute="leading" secondItem="HIZ-Rm-lK5" secondAttribute="leading" id="tN6-eV-mzk"/>
+                            <constraint firstItem="MHM-22-Hl8" firstAttribute="top" secondItem="AE3-mF-HsP" secondAttribute="bottom" constant="1" id="vDI-on-bas"/>
+                            <constraint firstItem="HIZ-Rm-lK5" firstAttribute="top" secondItem="MHM-22-Hl8" secondAttribute="bottom" id="vjC-1O-qyz"/>
+                            <constraint firstItem="AE3-mF-HsP" firstAttribute="top" secondItem="kV0-ST-AFz" secondAttribute="top" constant="167" id="z0z-9W-aCK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kV0-ST-AFz"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="uTX-9E-RZK" id="Arn-Rq-kK4"/>
+                        <outlet property="saveButton" destination="HIZ-Rm-lK5" id="XVh-dp-Jet"/>
+                        <outlet property="titleLabel" destination="AE3-mF-HsP" id="URV-iY-Jhd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNL-OC-eo9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2564" y="-3260.4197901049479"/>
+        </scene>
+    </scenes>
+</document>

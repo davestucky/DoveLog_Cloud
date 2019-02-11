@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DmZ-rG-7vL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Comment Type Popup View Controller-->
+        <scene sceneID="xRF-D0-xwY">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="DmZ-rG-7vL" customClass="CommentTypePopupViewController" customModule="DoveLog_Cloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OGX-Eu-0pI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0H-DC-52f">
+                                <rect key="frame" x="91" y="241" width="195" height="185"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DmZ-rG-7vL" id="Hh9-Wm-6WG"/>
+                                    <outlet property="delegate" destination="DmZ-rG-7vL" id="5Nb-Nl-pQv"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Type Comment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghK-24-8Tp">
+                                <rect key="frame" x="91" y="195" width="195" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUi-nO-2iL" customClass="UIButtonX" customModule="DoveLog_Cloud" customModuleProvider="target">
+                                <rect key="frame" x="90" y="427" width="195" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Rkd-7o-zcN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <size key="titleShadowOffset" width="7" height="4"/>
+                                <state key="normal" title="Save Type"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.043137254899999998" green="0.14117647059999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="15" height="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveDate_TouchUpInside:" destination="DmZ-rG-7vL" eventType="touchUpInside" id="z6B-c6-wD3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81317417512690349" green="0.81317417512690349" blue="0.81317417512690349" alpha="0.36207726883561642" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GUi-nO-2iL" firstAttribute="top" secondItem="r0H-DC-52f" secondAttribute="bottom" constant="1" id="3tW-Bn-CQr"/>
+                            <constraint firstItem="ghK-24-8Tp" firstAttribute="trailing" secondItem="r0H-DC-52f" secondAttribute="trailing" id="6Ie-pp-cX9"/>
+                            <constraint firstItem="iiR-2C-9vu" firstAttribute="trailing" secondItem="r0H-DC-52f" secondAttribute="trailing" constant="89" id="FJd-oj-eCh"/>
+                            <constraint firstItem="GUi-nO-2iL" firstAttribute="leading" secondItem="iiR-2C-9vu" secondAttribute="leading" constant="90" id="HLp-Dn-NV6"/>
+                            <constraint firstItem="r0H-DC-52f" firstAttribute="top" secondItem="ghK-24-8Tp" secondAttribute="bottom" constant="1" id="QgE-y4-nRa"/>
+                            <constraint firstItem="r0H-DC-52f" firstAttribute="leading" secondItem="iiR-2C-9vu" secondAttribute="leading" constant="91" id="Unq-0g-hiO"/>
+                            <constraint firstItem="ghK-24-8Tp" firstAttribute="top" secondItem="iiR-2C-9vu" secondAttribute="top" constant="175" id="gIf-nR-voi"/>
+                            <constraint firstItem="ghK-24-8Tp" firstAttribute="leading" secondItem="r0H-DC-52f" secondAttribute="leading" id="hLs-UL-8jc"/>
+                            <constraint firstItem="GUi-nO-2iL" firstAttribute="centerX" secondItem="OGX-Eu-0pI" secondAttribute="centerX" id="kFa-Lv-pPT"/>
+                            <constraint firstItem="r0H-DC-52f" firstAttribute="centerY" secondItem="OGX-Eu-0pI" secondAttribute="centerY" id="pPP-RH-FdO"/>
+                            <constraint firstItem="iiR-2C-9vu" firstAttribute="bottom" secondItem="GUi-nO-2iL" secondAttribute="bottom" constant="200" id="zyJ-lM-uGx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iiR-2C-9vu"/>
+                    </view>
+                    <connections>
+                        <outlet property="saveButton" destination="GUi-nO-2iL" id="Mhz-66-Pj4"/>
+                        <outlet property="titleLabel" destination="ghK-24-8Tp" id="Yqv-Fw-ZrW"/>
+                        <outlet property="typePicker" destination="r0H-DC-52f" id="OXS-8z-iEd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TLT-u8-Lgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2474.4000000000001" y="-3512.2938530734637"/>
+        </scene>
+    </scenes>
+</document>
