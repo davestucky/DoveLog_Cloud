@@ -64,10 +64,6 @@ class CommentTypePopupViewController: UIViewController {
                         self.values.add(longinfo!)
                         self.typePicker.reloadAllComponents()
                         self.selectedType = (self.values[0] as! String)
-                        let commentTypeArray:Set =  values as! Array
-                        
-                        
-                        
                     }
                 }
             }
